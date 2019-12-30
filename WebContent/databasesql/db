@@ -1,0 +1,78 @@
+create table signUp(name varchar2(20)not null,
+email varchar2(20)unique not null,
+password varchar2(20)not null,
+conpassword varchar2(20),
+gender varchar2(20)not null,
+security varchar2(30),
+contect varchar2(20)
+);
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+create table bookinguser(name varchar2(20),
+busname varchar2(20),
+email varchar2(20),
+contact number(15),
+gender varchar2(20),
+source varchar2(15),
+destination varchar2(15),
+jounerydate timestamp,
+noofperson number(10));
+
+inseret into bookingsuser(name,email,contact,gender,destination,arrivaltime,departuretime,noofperson) values("satish parmer",'satish@gmail.com',9685109896,male)
+
+++++++++++++++++++++++++++++++++++++++++
+insert into  bookinguser values('satish','express','sa@gmail.com',9685109896,'male','indore','bhopal','08-may-2019',5);
+
+
+insert into  bookinguser('name',busname,'email','contact','gender','source','destination','jounerydate','noofperson') values(?,?,?,?,?,?,?,?,?)
+
+-------------------------------------------------------------------------------------------
+
+create table bussearch(id number(10),
+JOURNEY_DATE date,
+busname varchar2(20)NOT NULL,
+source varchar2(30)NOT NULL,
+destination varchar2(30)NOT NULL,
+arrival varchar2(20) ,
+departure varchar2(20) ,
+totalkm number(15)NOT NULL);
+
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(10,'22-jun-2019','express','bhopal','indore','6:30','8:20',170);
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(10,'22-jun-2019','express','bhopal','sehore','7:00','7:30',150);
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(10,'22-jun-2019','express','bhopal','ujjain','7:30','8:00',50);
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(11,'25-jun-2019','tour & traval','raipur','bhilai','7:00','7:30',50);
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(13,'26-jun-2019','parmar bus ','raipur','bhilai','2:50','3:20',50);
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(14,'28-jun-2019','super bus ','raipur','bhilai','6:50','7:20',50);
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(10,'28-jun-2019','express ','bhilai','raipur','6:50','7:20',50);
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(11,'25-jun-2019','tour & traval','bhilai','raipur','2:00','2:40',50);
+
+
+
++++++++++++++++++++++++++++++++
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(11,'27-jun-2019','super','bhopal','indore','3:30','5:20',170);
+
+
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(14,'29-jun-2019','super','indore','bhopal','3:30','5:20',170);
+
+
+insert into bussearch(id,JOURNEY_DATE,busname,source,destination,arrival,departure,totalkm) values(11,'27-jun-2019','rajdhani','bhopal','indore','4:30','6:20',170);
+
+
+
+
+<button class="btn" id="loginbtn"> 
+
+
+
+
+
+
+
